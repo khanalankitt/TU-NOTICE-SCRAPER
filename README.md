@@ -6,4 +6,4 @@ This repository contains a Node.js-based web scraper that checks for new CSIT-re
 
 <b>Discord Integration:</b> Sends notices to a Discord channel using a webhook.<br>
 
-<b></b>Automated Scheduling:</b> Runs every hour using GitHub Actions to check for new notices.
+<b>Automated Scheduling:</b> Runs every hour using GitHub Actions to check for new notices.
