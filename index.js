@@ -20,7 +20,6 @@ function loadSentNotices() {
   }
 }
 
-
 function saveSentNotices(notices) {
   fs.writeFileSync(SENT_FILE, JSON.stringify(notices, null, 2));
 }
