@@ -3,7 +3,8 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 const axios = require("axios");
 const cheerio = require("cheerio");
 const cron = require("node-cron");
-
+const dotenv = require("dotenv");
+dotenv.config();
 const URL = "https://iost.tu.edu.np/notices";
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_URL;
 async function scrapeWebsite() {
@@ -36,11 +37,9 @@ async function scrapeWebsite() {
   }
 }
 
-// ⏰ Schedule to run every hour
 cron.schedule("0 * * * *", () => {
   console.log("⏳ Running scraper...");
   scrapeWebsite();
 });
 
-// 🔹 Run once immediately as well
 scrapeWebsite();
