@@ -3,7 +3,5 @@ This repository contains a Node.js-based web scraper that checks for new CSIT-re
 
 <h3>Features</h3>
 <b>Web Scraping:</b> Scrapes the IOST Notice Page for notices containing "CSIT" and "2079". <br>
-
-<b>Discord Integration:</b> Sends notices to a Discord channel using a webhook.<br>
-
+<b>Discord Integration:</b> Sends notices to a Discord channel using a webhook. <br>
 <b>Automated Scheduling:</b> Runs every hour using GitHub Actions to check for new notices.
