@@ -1,5 +1,5 @@
 <h1>CSIT Notice Scraper</h1>
-This repository contains a Node.js-based web scraper that checks for new CSIT-related notices published on the IOST website and sends them to a Discord channel via a webhook. The scraper runs automatically every hour and checks for new notices containing the keywords "CSIT" and "2079". If new notices are found, they are sent to a designated Discord channel.
+This repository contains a Node.js-based web scraper that checks for new CSIT-related notices published on the IOST website and sends them to a Discord channel via a webhook. The scraper runs automatically every minute and checks for new notices containing the keywords "CSIT" and "2079". If new notices are found, they are sent to a designated Discord channel.
 
 <h2>Features</h2>
 <ul>
