@@ -12,6 +12,6 @@ This repository contains a Node.js-based web scraper that checks for new CSIT-re
 </li>
 <br>
 <li>
-<b>Automated Scheduling:</b> Runs every hour using GitHub Actions to check for new notices.
+<b>Automated Scheduling:</b> Runs every minute using GitHub Actions to check for new notices.
 </li>
 </ul>
