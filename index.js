@@ -5,9 +5,7 @@ const cheerio = require("cheerio");
 const cron = require("node-cron");
 
 const URL = "https://iost.tu.edu.np/notices";
-const DISCORD_WEBHOOK_URL =
-  "https://discord.com/api/webhooks/1338520700868231328/BPW92po6bExd7o7in6nnnOR4zMR-VxhqQYA1vmK7csx-2c7tSNy9lBLS49IaxiKCnXlf";
-
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_URL;
 async function scrapeWebsite() {
   try {
     const { data } = await axios.get(URL);
