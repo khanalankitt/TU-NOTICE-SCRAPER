@@ -2,11 +2,14 @@ name: CSIT Scraper
 
 on:
   schedule:
-    - cron: "* * * * *" 
-  workflow_dispatch: 
+    - cron: "* * * * *"  
 
 permissions:
   contents: write
+
+concurrency:
+  group: "csit-scraper"
+  cancel-in-progress: true
 
 jobs:
   run-scraper:
