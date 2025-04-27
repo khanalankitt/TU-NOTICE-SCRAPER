@@ -2,7 +2,7 @@ name: CSIT Scraper
 
 on:
   schedule:
-    - cron: "* * * * *"  
+    - cron: "0 * * * *"  
 
 permissions:
   contents: write

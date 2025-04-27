@@ -72,7 +72,7 @@ async function scrapeWebsite() {
   }
 }
 
-cron.schedule("* * * * *", () => {
+cron.schedule("0 * * * *", () => {
   console.log("⏳ Running scraper...");
   scrapeWebsite();
 });
